@@ -1,0 +1,23 @@
+server:
+  port: 8099
+
+# llmbase
+langchain4j:
+  open-ai:
+    chat-model:
+      base-url: https://api.minimaxi.com/v1
+      api-key: ${MINIMAX_M2.1_LANGCHAIN}
+      model-name: MiniMax-M2.1
+      log-requests: true
+      log-responses: true
+      # ????(???)
+      temperature: 0.8
+      timeout: PT60S
+  community:
+    dashscope:
+      chat-model:
+        api-key: ${ALI_BAILIAN}
+        model-name: qwen-plus
+logging:
+  level:
+    root: debug
