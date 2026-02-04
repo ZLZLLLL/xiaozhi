@@ -59,8 +59,8 @@ public class llmTest {
     @Test
     public void testGenerationImage() {
         WanxImageModel wanxImageModel = WanxImageModel.builder()
-                .modelName("qwen-image-max")
-                .apiKey("${ALI_BAILIAN}")
+                .modelName("wanx-v1")
+                .apiKey(System.getenv("ALI_BAILIAN"))
                 .build();
         Response<Image> imageResponse = wanxImageModel.generate("奇幻森林精灵：在一片弥漫着轻柔薄雾的古老森林深处，" +
                 "阳光透过茂密枝叶洒下金色光斑。一位身材娇小、长着透明薄翼的精灵少女站在一朵硕大的蘑菇上。" +
