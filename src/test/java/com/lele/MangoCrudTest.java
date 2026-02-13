@@ -26,6 +26,7 @@ public class MangoCrudTest {
     public void testInsert2() {
         ChatMessages chatMessages = new ChatMessages();
         chatMessages.setContent("聊天记录详情2");
+        chatMessages.setMemoryId("100");
         chatMessages.setMessageId(new ObjectId());
         mongoTemplate.insert(chatMessages);
     }

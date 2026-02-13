@@ -24,4 +24,4 @@ logging:
 spring:
   data:
     mongodb:
-      uri: mongodb://localhost:27017/chat_memory_db
+      uri:  mongodb://admin:123456@localhost:27017/chat_memory_db?authSource=admin
