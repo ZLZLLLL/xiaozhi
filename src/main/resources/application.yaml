@@ -6,8 +6,8 @@ langchain4j:
   open-ai:
     chat-model:
       base-url: https://api.minimaxi.com/v1
-      api-key: ${MINIMAX_M2.1_LANGCHAIN}
-      model-name: MiniMax-M2.1
+      api-key: ${MINIMAX_M2.5_LANGCHAIN}
+      model-name: MiniMax-M2.5
       log-requests: true
       log-responses: true
       # ????(???)
@@ -24,4 +24,4 @@ logging:
 spring:
   data:
     mongodb:
-      uri:  mongodb://admin:123456@localhost:27017/chat_memory_db?authSource=admin
+      uri: mongodb://admin:123456@localhost:27017/chat_memory_db?authSource=admin

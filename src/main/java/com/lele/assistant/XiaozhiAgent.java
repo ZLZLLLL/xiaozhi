@@ -1,22 +1,21 @@
 package com.lele.assistant;
 
 import dev.langchain4j.service.MemoryId;
+import dev.langchain4j.service.SystemMessage;
 import dev.langchain4j.service.UserMessage;
-import dev.langchain4j.service.V;
 import dev.langchain4j.service.spring.AiService;
 
 import static dev.langchain4j.service.spring.AiServiceWiringMode.EXPLICIT;
 
+
 @AiService(
         wiringMode = EXPLICIT,
         chatModel = "openAiChatModel",
-        chatMemory = "chatMemory"
+        chatMemoryProvider = "chatMemoryProviderXiaozhi"
 )
-public interface MemoryChatAssistant {
-
-    @UserMessage("你是我的好朋友，请用上海话回答问题，并且添加一些表情符号。 {{mes}}")
-        //{{it}}表示这里唯一的参数的占位符
-    String chat(String userMessage);
+public interface XiaozhiAgent {
 
 
+    @SystemMessage(fromResource = "xiaozhi-prompt-template.txt")
+    String chat(@MemoryId Long memoryId, @UserMessage String userMessage);
 }
