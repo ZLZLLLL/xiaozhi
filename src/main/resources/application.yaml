@@ -22,6 +22,11 @@ logging:
   level:
     root: debug
 spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:33306/guiguxiaozhi?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 123456
   data:
     mongodb:
       uri: mongodb://admin:123456@localhost:27017/chat_memory_db?authSource=admin
