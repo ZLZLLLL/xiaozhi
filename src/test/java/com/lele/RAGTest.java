@@ -1,6 +1,5 @@
 package com.lele;
 
-import com.alibaba.dashscope.tokenizers.QwenTokenizer;
 import dev.langchain4j.data.document.Document;
 import dev.langchain4j.data.document.loader.FileSystemDocumentLoader;
 import dev.langchain4j.data.document.parser.TextDocumentParser;
@@ -9,7 +8,6 @@ import dev.langchain4j.data.document.splitter.DocumentByParagraphSplitter;
 import dev.langchain4j.data.message.UserMessage;
 import dev.langchain4j.data.segment.TextSegment;
 import dev.langchain4j.model.embedding.onnx.HuggingFaceTokenizer;
-import dev.langchain4j.model.openai.OpenAiChatModel;
 import dev.langchain4j.model.openai.OpenAiTokenizer;
 import dev.langchain4j.store.embedding.EmbeddingStoreIngestor;
 import dev.langchain4j.store.embedding.inmemory.InMemoryEmbeddingStore;
@@ -21,7 +19,7 @@ import java.nio.file.PathMatcher;
 import java.util.List;
 
 @SpringBootTest
-public class TAGTest {
+public class RAGTest {
 
 
     @Test

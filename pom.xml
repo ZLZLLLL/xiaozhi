@@ -104,6 +104,11 @@
             <groupId>dev.langchain4j</groupId>
             <artifactId>langchain4j-easy-rag</artifactId>
         </dependency>
+        <!-- Pinecone vector database integration -->
+        <dependency>
+            <groupId>dev.langchain4j</groupId>
+            <artifactId>langchain4j-pinecone</artifactId>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>

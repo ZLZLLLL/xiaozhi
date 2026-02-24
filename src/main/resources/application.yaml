@@ -18,6 +18,9 @@ langchain4j:
       chat-model:
         api-key: ${ALI_BAILIAN}
         model-name: qwen-plus
+      embedding-model:
+        api-key: sk-da76437b3ee14e2cb2d718de905152e0
+        model-name: text-embedding-v4
 logging:
   level:
     root: debug
