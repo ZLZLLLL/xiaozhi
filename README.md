@@ -1,4 +1,4 @@
-# Java AI LangChain4j 项目
+# Java AI LangChain4j 项目--小智医疗
 
 这是一个基于Spring Boot和LangChain4j的AI聊天应用项目，集成了多种AI服务，包括OpenAI兼容接口（如MiniMax）和阿里云通义千问。
 
